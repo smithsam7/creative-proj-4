@@ -1,0 +1,39 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-repeat: repeat;
+  background-size: contain;
+  text-align: center;
+  background-image: url("http://www.sdjgjx.com/up/pc/background%20hd.jpg");
+
+}
+.first-sec {
+    background-color: #EBEDEB;
+    min-height: 200px;
+    opacity: 0.5;
+
+}
+.second-sec {
+    background-color: #EBEDEB;
+    min-height: 200px;
+    opacity: 0.85;
+}
+
+.third-sec{
+    background-color: #EBEDEB;
+    min-height: 200px;
+    opacity: 0.85;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: #99ddff;
+}
+
+ul {
+  list-style-type:none;
+}

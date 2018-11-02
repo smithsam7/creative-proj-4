@@ -1,0 +1,17 @@
+nohup: ignoring input
+Port: 4200
+[0mGET / [32m200 [0m8.605 ms - 3720[0m
+[0mGET /7.png [32m200 [0m2.173 ms - 48476[0m
+[0mGET /main.js [32m200 [0m7.827 ms - 5331[0m
+[0mGET /main.css [32m200 [0m4.516 ms - 1174[0m
+[0mGET /6.png [32m200 [0m0.551 ms - 18711[0m
+[0mGET /5.png [32m200 [0m1.289 ms - 27910[0m
+[0mGET /4.png [32m200 [0m0.390 ms - 36923[0m
+[0mGET /mountain_faded-01.jpg [32m200 [0m5.335 ms - 290768[0m
+[0mGET /3.png [32m200 [0m0.488 ms - 35707[0m
+[0mGET /1.png [32m200 [0m0.511 ms - 36750[0m
+[0mGET /2.png [32m200 [0m0.333 ms - 43529[0m
+[0mGET /sun.jpg [32m200 [0m0.825 ms - 567859[0m
+[0mGET /over.png [32m200 [0m4.688 ms - 5390217[0m
+[0mGET /under.jpg [32m200 [0m4.681 ms - 1201633[0m
+[0mGET /favicon.ico [33m404 [0m298.310 ms - 1112[0m

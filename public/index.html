@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UV index info</title>
+
+</head>
+
+<body>
+    <div id="header">
+    <div class="" style = "display:inline-block; padding-left:25px"><h1 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>Ultraviolet (UV) Light Index Information</strong></h1><h4>Find out what current and maximum UV levels are for a location and elevation!</h4><br></div>
+    <div class="container" ng-app="myApp" ng-controller="mainCtrl">
+        <br>
+        <div>
+            <form name="uv_form" ng-submit="Update(uv_form)">
+                <p> Latitude: &nbsp   
+                <input placeholder='ex. 40.3563' ng-model='uv_form.lat' onblur="updateLat();" id="Latitude"/>
+                &nbsp &nbsp &nbsp Longitude: &nbsp 
+                <input placeholder='ex. -111.7325' ng-model='uv_form.long' onblur="updateLong();" id="Longitude"/>
+                &nbsp &nbsp &nbsp <br><br><br><br><br><br><br><br><br><br><br>
+                <div id="ele_param">Elevation: &nbsp 
+                <input placeholder='ex. 100' ng-model='uv_form.ele' id="elevation"/> m
+            </div>
+                <br><br><br> <br><br>
+                <div id="submit_button">
+                <input type="submit" value="   Get data   " /></p>
+            </div>
+            <input placeholder='Please enter guess first!' ng-model='uv_form.nada' id="nothing"/>
+            </form>
+        </div>
+
+        <div id="map_box">
+                <img src="under.jpg" id="back-map">
+                <img src="over.png" id="front-map">
+        </div>
+
+        <div id="mountain_box">
+            <img src="mountain_faded-01.jpg" id="back-mountain">
+            <div id="over">
+                <img src="7.png" class="over-pic" id="slice7" onmouseover="show(7);" onmouseout="hide(7);" onclick="select(7);">
+                <img src="6.png" class="over-pic" id="slice6" onmouseover="show(6);" onmouseout="hide(6);" onclick="select(6);">
+                <img src="5.png" class="over-pic" id="slice5" onmouseover="show(5);" onmouseout="hide(5);" onclick="select(5);">
+                <img src="4.png" class="over-pic" id="slice4" onmouseover="show(4);" onmouseout="hide(4);" onclick="select(4);">
+                <img src="3.png" class="over-pic" id="slice3" onmouseover="show(3);" onmouseout="hide(3);" onclick="select(3);">
+                <img src="2.png" class="over-pic" id="slice2" onmouseover="show(2);" onmouseout="hide(2);" onclick="select(2);">
+                <img src="1.png" class="over-pic" id="slice1" onmouseover="show(1);" onmouseout="hide(1);" onclick="select(1);">
+            </div>
+        </div>
+
+        <div id="marker"></div>
+
+
+
+       <br> <br> 
+        <h4>Current Index: </h4> <p>{{resultList[0].level}}<i>&nbsp - &nbsp{{resultList[0].category}}</i></p>
+        <h4>Today's High: </h4> <p>{{resultList[1].level}}<i>&nbsp - &nbsp{{resultList[1].category}}</i></p>
+
+        <br><br><br><br><br>
+    
+</div>
+</div>
+</body>

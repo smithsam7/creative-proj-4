@@ -1,0 +1,95 @@
+#marker {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color: red;
+    top: 450px;
+    left: 250px;
+    z-index: 3;
+}
+
+#header {
+    background-image: url("sun.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%
+}
+
+#nothing {
+    visibility: hidden;
+}
+
+
+#back-map {
+    position: absolute;
+    top:260px;
+    left: 50px;
+    width: 600px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+#front-map {
+    position: absolute;
+    top:260px;
+    left: 50px;
+    width: 600px;
+    opacity: 1;
+    z-index: 2;
+}
+
+#ele_param {
+    position: absolute;
+    left: 800px;
+}
+
+#submit_button {
+    text-align: center;
+}
+
+
+
+#back-mountain {
+    width: 400px;
+    z-index: 1;
+    position: absolute;
+    top: 225px;
+    left: 750px;
+}
+
+#over {
+    width: 400px;
+    
+}
+
+.over-pic {
+    z-index: 2;
+    width: 400px;
+    position: absolute;
+    visibility: visible;
+    opacity: 0;
+    left: 750px;
+}
+
+#slice1 {
+    top: 400px;
+}
+#slice2 {
+    top: 371px;
+}
+#slice3 {
+    top: 342px;
+}
+#slice4 {
+    top: 313px;
+}
+#slice5 {
+    top: 284px;
+}
+#slice6 {
+    top: 256px;
+}
+#slice7 {
+    top: 227px;
+}
